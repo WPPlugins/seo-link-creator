@@ -1,0 +1,220 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #f5f5f5;
+	font-family: "Open Sans", sans-serif;
+	color: #444;
+	line-height: 1.4em;
+	font-size: 12px;
+}
+
+input[type="text"] {
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: 1px;
+	width: 360px;
+	margin-top: 5px;
+	padding: 3px;
+	border-color: #DDD;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+	-webkit-box-sizing: border-box;
+	background-color: #FFF;
+	color: #333;
+}
+
+.wp_themeSkin .mceButtonDisabled .mceIcon {
+	opacity: 0.4 !important;
+}
+
+
+.fa.fa-chevron-down::before {
+content: " \25BC";
+}
+.fa.fa-chevron-up::after {
+content: " \25B2";
+}
+#slc-wait-msg {	
+	color: #444;
+	margin-bottom: 3px;
+}
+
+#slc-progress-msg {
+	color: #666;
+	font-size: 11px;
+	margin-top: 2px;
+}
+
+#slc-progress-bar-container {
+	width: 100%;
+	height: 10px;
+	background-color: #FFF;
+	border-radius: 25px;
+	margin: auto;
+	display: none;
+}
+
+#slc-progress-bar {
+	width: 0%;
+	background-color: #999;
+	height: 100%;
+	border-radius: 25px;
+}
+
+.slc-centered {
+  position: absolute;
+  text-align: center;
+  margin:auto;
+  right:0;
+  left:0;
+  top:0;
+  bottom:0;
+  width:120px;
+  height:23px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #FFF;
+  border: 1px solid;
+}
+
+.slc-howto {
+	color: #666;
+	font-size:16px;	
+}
+
+.slc-link-submit {
+	float: right;
+	margin-right: 20px;
+}
+
+.slc-link-option {
+	margin-top: 10px;
+}
+
+#slc-edit-sense-div {
+	width:100%;
+	margin-top:5px
+}
+
+#slc-edit-sense {
+	margin-right: 15px;
+}
+
+#slc-link-cancel {
+	float: left;
+	margin-left: 20px;
+}
+
+.slc-button {
+	background: #2EA2CC;
+	border-color: #0074A2;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120, 200, 230, .5), 0 1px 0
+		rgba(0, 0, 0, .15);
+	box-shadow: inset 0 1px 0 rgba(120, 200, 230, .5), 0 1px 0
+		rgba(0, 0, 0, .15);
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 26px;
+	height: 28px;
+	margin: 0;	
+	margin-bottom: 5px;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.slc-button:hover {
+	background: #1e8cbe;
+}
+
+.slc-img-button {
+	opacity: 0.5;
+	vertical-align: middle;
+}
+
+.slc-img-button:hover {
+	opacity: 0.8 !important;
+}
+
+.slc-img-button:disabled {
+	opacity: 0.1 !important;
+}
+
+.slc-submit-delete {
+	text-decoration: none;	
+	padding: 1px 2px;
+	color: #A00;
+}
+
+.slc-submit-delete:hover {
+	text-decoration: none;
+	padding: 1px 2px;
+	color: #F00;
+}
+
+.slc-submit-box {
+	border-top: 1px solid #e5e5e5;
+	line-height: 28px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 10px;	
+	overflow: auto;
+	height: 35px;
+}
+
+#slc-word {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 10px;		
+}
+
+#slc-word-info {
+	margin-top: 30px;
+	margin-left: 20px;	
+	min-height: 40px;
+}
+
+/* Puts a scroball within the popup content - excluding the submit button bottom right */
+#slc-sense-menu {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+/* 
+ * Sense Menu Customization 
+ */
+ 
+.idl-sensemenu.idl-grid .idl-tile-container {  
+  margin: 2px 10px 10px 2px;
+}
+
+.idl-sensesel .idl-sensetile {
+  outline-color: #2EA2CC !important;
+}
+
+.idl-sensemenu .idl-sensesel .idl-tile-sum {
+  background: none;
+}
+
+/* Remove nav bar */
+.idl-navbar {
+	display: none;	
+}
+
+.idl-sensemenu {
+  background: none;   
+}
+
+.idl-tile-other {
+	display: none;
+}

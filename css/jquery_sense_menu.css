@@ -1,0 +1,286 @@
+/* 
+ * Styles for sense cards (a.k.a. tiles)
+ */
+ 
+/* General definitions applicable to all versions */
+.idl-tile-container {
+}
+
+.idl-sensetile {
+}
+
+/* title */
+.idl-sensetile h1 {
+ font-size: 18px;
+ margin: 0 0 10px 0;
+}
+
+/* subtitle */
+.idl-sensetile h2 {
+ font-size: 14px;
+ margin: -5px 0 10px 0;
+}
+
+/* description */
+.idl-sensetile .idl-def {
+}
+
+.idl-sensetile .idl-def p {
+ color: #666;
+ margin: 0;
+}
+
+
+.idl-icon-container, .idl-img-container {
+ float: left;
+ margin: 0 10px 0px 0;
+}
+
+/* icon */
+.idl-icon-container {
+  padding: 50px 0; 
+  background-color: gainsboro;
+  height: 160px;
+  width: 100%;
+}
+
+.idl-icon-container img {
+ max-width: 100%;
+ height: 60px;
+ display: block;
+ margin: 0 auto;
+}
+
+/* image */
+.idl-img-container .idl-img-attr {
+ max-width: 100%;
+ font-style:italic;
+ font-size:10px;
+}
+
+.idl-img-container .idl-img-attr span {
+ font-style:normal;
+ word-break: break-all;
+}
+/*
+ * CSS for the three widgets related to sense menu tagging
+ */
+
+.idl-sensemenu {
+  background-color: #f8f8f8;
+}
+
+.idl-sensemenu.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+ 
+/*
+ * Styles for the navigation bar */
+ */
+
+.idl-sensemenu .idl-navbar {
+ margin-bottom: 25px;
+}
+
+.idl-sensemenu .idl-navbar ul {
+ margin-bottom: 0;
+ padding-left: 15px;
+}
+
+.idl-sensemenu .idl-nav-grps {
+ float: left;
+ overflow: hidden;
+ margin-top: 20px;
+}
+
+.idl-sensemenu.idl-grid .idl-nav-grps {
+ margin-bottom: 5px;
+}
+
+.idl-sensemenu .idl-nav-grps li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.idl-sensemenu .idl-nav-grps li a {
+}
+
+.idl-sensemenu .idl-nav-grps .idl-grp-cnt {
+ vertical-align: baseline;
+ font-size: 0.6em;
+ position: relative;
+ padding: 0.5em 0 0 0.5em;
+ margin: -0.25em 0;
+ position: relative;
+ top: -0.8em;
+}
+
+.idl-sensemenu .idl-view-ctrls {
+ float: right;
+ margin-top: 5px;
+}
+
+.idl-sensemenu .idl-view-ctrls button {
+ margin: 0 0 0 2px;
+ background-color: white;
+}
+
+
+/*
+ * Styles for the sense tiles - grid and carousel
+ */
+
+.idl-sensemenu .idl-sensetile {
+  width: 160px;
+  height: 230px;
+}
+
+.idl-sensemenu .idl-sensetile {
+ background-color: white;
+ position: relative;
+ padding: 0;
+ overflow: hidden;
+}
+
+.idl-sensemenu .idl-grpsel .idl-tile-sum {
+  background: #f8f8f8; 
+}
+
+.idl-sensemenu .idl-sensesel .idl-tile-sum {
+  background: #e8e8e8;
+}
+
+.idl-sensemenu .idl-tile-sum {
+ height: 70px;
+ padding: 10px;
+}
+
+.idl-sensemenu .idl-img-icon-ctr {
+ width: 160px;
+ height: 160px;
+}
+
+.idl-sensemenu .idl-img-container {
+ padding: 0;
+ background-color: white;
+ height: 100%;
+ width: 100%;
+ position:relative;
+ text-align: center;
+}
+
+.idl-sensemenu .idl-img-container img {
+ display: inline-block;
+}
+
+.idl-sensemenu .idl-img-container .idl-img-attr {
+ position: absolute;
+ bottom: 0;
+ background-color: rgba(51,51,51,0.8);
+ display: none;
+ color:white;
+ line-height: 100%;
+ padding: 0px 4px;
+ overflow:hidden;
+ width:100%;
+}
+
+.idl-sensemenu .idl-img-container:hover .idl-img-attr {
+ display: block;
+}
+
+.idl-sensemenu .idl-img-container .idl-img-attr span {
+ display:inline-block;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+.idl-sensemenu .idl-sensetile .idl-def-tgl {
+ position:absolute;
+ top: 0px;
+ right:0px;
+ color: #e8e8e8;
+ height: 30px;
+ width: 30px;
+}
+
+.idl-sensemenu .idl-sensetile:hover .idl-def-tgl {
+ color: darkgrey;
+}
+
+.idl-sensemenu .idl-sensetile .idl-def-tgl span {
+ position:absolute;
+ display:block;
+ top: 7px;
+ right:10px;
+}
+
+.idl-sensemenu .idl-tile-sum h1 {
+ font-size: 16px;
+}
+
+.idl-sensemenu .idl-def {
+ padding: 0 5px 5px 5px;
+ font-size: .9em;
+ height: 170px;
+}
+
+/*
+ * Styles for the sense menu - grid
+ */
+ 
+.idl-sensemenu.idl-grid .idl-tile-container {
+ float: left;
+ margin: 0px 10px 10px 0px;
+}
+
+.idl-sensemenu.idl-grid .idl-sensetile {
+   outline: transparent solid 2px;
+   border: 1px solid #ddd;
+   cursor: pointer;
+}
+
+.idl-sensemenu-open.idl-grid .idl-sensetile:hover {
+  outline-color: #ddd;
+}
+
+/*
+ * Styles for the sense menu - carousel
+ */
+.idl-sensemenu.idl-carousel {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.idl-sensemenu-open.idl-carousel .idl-sensetile {
+  outline: transparent solid 2px;
+  border: 1px solid #ddd;
+  margin: 4px;
+}
+
+.idl-sensemenu-open.idl-carousel .idl-sensetile:hover {
+  outline-color: #ddd;
+}
+
+.idl-sensemenu-open.idl-carousel .idl-sensetile.expanded {
+  height: auto;
+}
+
+.idl-sensemenu.idl-carousel .owl-buttons div {
+  position: absolute;
+}
+ 
+.idl-sensemenu.idl-carousel .owl-buttons .owl-prev {
+  left: -45px;
+  top: 100px; 
+}
+ 
+.idl-sensemenu.idl-carousel .owl-buttons .owl-next {
+  right: -45px;
+  top: 100px;
+}
+
+.idl-sensemenu .owl-theme .owl-controls .owl-buttons div.disabled {
+  opacity: 0;
+}
